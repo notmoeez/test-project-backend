@@ -37,6 +37,9 @@ gem "bcrypt", "~> 3.1.7"
 gem 'rack-cors'
 gem 'pry', '~> 0.14.1'
 gem 'faker', '~> 3.5', '>= 3.5.1'
+gem 'devise', '~> 4.9', '>= 4.9.3'
+gem 'devise-jwt'
+gem 'jsonapi-serializer'
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem "tzinfo-data", platforms: %i[ mswin mswin64 mingw x64_mingw jruby ]
