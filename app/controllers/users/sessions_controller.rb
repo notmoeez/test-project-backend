@@ -2,7 +2,9 @@
 
 class Users::SessionsController < Devise::SessionsController
   # before_action :configure_sign_in_params, only: [:create]
-  protect_from_forgery with: :null_session
+  # protect_from_forgery with: :null_session
+  # protect_from_forgery unless: ->{request.format.json?}
+  
   private
   def respond_with(current_user, _opts = {})
     render json: {

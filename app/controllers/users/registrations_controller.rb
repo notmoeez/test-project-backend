@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 class Users::RegistrationsController < Devise::RegistrationsController
-  protect_from_forgery with: :null_session
+  # protect_from_forgery with: :null_session
+  # protect_from_forgery unless: -> { request.format.json? }
   
   def respond_with(current_user, _opts = {})
   # if user successfully saved in database
